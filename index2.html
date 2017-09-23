@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Practice</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    	.navbar{
+    		margin-bottom: 0;
+    		border-radius: 0;
+    	}
+    </style>
+
+  </head>
+  <body>
+		
+  	<nav class="navbar navbar-inverse">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-exampel-navbar-collapse-1" aria-expanded="false">
+  				<span class="sr-only">Toggle navigation</span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>
+  				<span class="icon-bar"></span>	
+  				</button>
+  				<a class="navbar-brand" href="#">Bootstrap CheatSheet</a>
+  			</div>
+
+  			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+  		</div>
+  	</nav>
+		
+		<div class="jumbotron text-center">
+      <div class="container">
+        <h1>Welcome To My Website</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="page-header">Hello, world!<small>Secondary Text</small></h1>
+    	<p class="lead">Lorem ipsum dolor sit amet.</p>
+    	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam aut cupiditate odio maiores voluptas commodi ullam assumenda quam ad nostrum, quae soluta praesentium ab in itaque, enim dignissimos similique quo recusandae nesciunt earum! Facilis consequuntur nulla blanditiis eos, maxime iure voluptatibus, nemo neque nihil aliquam asperiores, molestias laboriosam recusandae alias. Repellendus cupiditate culpa possimus fuga.
+        
+        <hr>
+
+        <!--Alignment & Transformation-->
+        <p class="text-left">left aligned text</p>
+        <p class="text-center">center aligned text</p>
+        <p class="text-right">right aligned text</p>
+        <p class="text-justify">justified text</p>
+        <p class="text-nowrap">unwrapped text</p>
+
+        <!--floated divs-->
+        <div class="pull-left">div floated to left</div>
+        <div class="pull-right">div floated to right</div>
+        
+        <!--clear float-->
+        <div class="clearfix"></div>
+
+        <hr>
+
+        <!--Blockquote-->
+        <blockquote class="blockquote">
+        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem beatae quisquam distinctio.</p>
+        	<footer>Quote by <cite title="Pratyush">Pratyush</cite></footer>
+        </blockquote>
+
+		<hr>
+		
+		<p>default list</p>		
+		<ul>
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+		
+		<br>
+		<p>unstyled list</p>
+		<ul class="list-unstyled">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+	
+		<br>
+		<p>inline list</p>
+		<ul class="list-inline">
+			<li>one</li>
+			<li>two</li>
+			<li>three</li>
+		</ul>
+		<hr>
+
+		<br>
+		To edit settings <kbd><kbd>Ctr</kbd> + <kbd>,</kbd></kbd>
+		<br>
+		<br>
+		<br>
+    </div>
+
+   	<div class="container">
+   		<button class="btn btn-default">Button</button>
+   		<a href="#" class="btn btn-default" role="button">Link</a>
+   		<input type="submit" class="btn btn-default" value="Submit">
+
+		
+		<br>
+
+   		<!--contextual buttons-->
+   		<button class="btn btn-default btn-lg">default</button>
+   		<button class="btn btn-primary">primary</button>
+   		<button class="btn btn-success btn-sm">sucess</button>
+   		<button class="btn btn-info btn-xs">Info</button>
+   		<button class="btn btn-warning">Warning</button>
+   		<button class="btn btn-danger">Danger</button>
+   		<button class="btn btn-link">Link</button>
+   	</div>
+	
+	<hr>
+
+   	<!--forms-->
+   	<div class="container">
+   		<form>
+   			<div class="form-group">
+   				<label>Name</label>
+   				<input type="text" placeholder="Add Name" class="form-control">
+   			</div>
+   		</form>
+   	</div>
+		
+
+		<!-- alerts -->
+		<div class="container">
+			<div class="alert alert-success">Alert1</div>
+			<div class="alert alert-warning">Alert2</div>
+			<div class="alert alert-warning alert-dismissible">
+				<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+				You can close this alert.
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 com-sm-8 col-xs-8">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In minus molestiae temporibus qui recusandae necessitatibus eum sapiente perspiciatis enim vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quod magni ratione sed velit suscipit dolorum modi earum consequuntur sit?</p>
+				</div>
+
+				<div class="col-md-4 com-sm-4 col-xs-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In minus molestiae temporibus qui recusandae necessitatibus eum sapiente perspiciatis enim vitae.</p>
+				</div>
+			</div>
+
+		
+
+			<div class="row">
+				<div class="col-md-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio aliquid, praesentium incidunt doloribus est adipisci asperiores eligendi cupiditate explicabo similique.</p>
+				</div>
+
+				<div class="col-md-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio aliquid, praesentium incidunt doloribus est adipisci asperiores eligendi cupiditate explicabo similique.</p>
+				</div>
+
+				<div class="col-md-4">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nobis soluta, magnam. Iusto reprehenderit numquam error tempora necessitatibus animi obcaecati!</p>
+				</div>	
+			</div>		
+		</div>
+	<div style="height:400px"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
